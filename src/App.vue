@@ -30,6 +30,9 @@ for (let i = 0; i < 100; i++) {
 
 
 export default {
+  // let;s add a custom directive so that we can use the vue directives syntax v-<name>
+  // Example:: v-viewer
+  // ::ref:: https://www.tutorialspoint.com/vuejs/vuejs_directives.htm
   directives: {
     viewer: viewer({
       debug: true,
