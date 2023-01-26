@@ -1,16 +1,16 @@
 <template>
   <div>
-    <div class="mt-[12%] mx-[5%]">
+    <div class="mx-16 my-[8%]">
       <div v-viewer="options">
-        <div class="grid sm:grid-cols-2 md:grid-cols-5 gap-4 mx-auto">
-
+        <div
+            class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-7 gap-x-3 gap-y-5 my-auto">
           <img
               v-for="{ low, high } in images"
               :key="high"
               :alt="high.split('?image=').pop()"
               :data-source="high"
               :src="low"
-              class="cursor-pointer"
+              class="cursor-pointer rounded-xl p-2 shadow-cs"
           />
         </div>
       </div>
@@ -68,5 +68,4 @@ export default {
     };
   },
 };
-console.log('asdadsasd')
 </script>
