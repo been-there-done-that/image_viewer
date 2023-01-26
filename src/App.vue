@@ -1,7 +1,9 @@
 <template>
-  <h1><p>To show the viewer, you have to click on the images.</p></h1>
+  <!-- <h1><p>To show the viewer, you have to click on the images.</p></h1> -->
+
+
   <div>
-    <div v-viewer="options" class="images clearfix">
+    <div v-viewer="options" class="sm:grid sm:grid-rows-1">
       <img
         v-for="{ source, thumbnail } in images"
         :key="source"
@@ -12,6 +14,8 @@
       />
     </div>
   </div>
+
+
 </template>
 
 <script lang="ts">

@@ -6,7 +6,7 @@ import VueViewer from 'v-viewer';
 
 import "viewerjs/dist/viewer.css"
 
-import './assets/main.css'
+import './assets/index.css'
 
 const app = createApp(App)
 
